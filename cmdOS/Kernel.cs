@@ -9,13 +9,14 @@ namespace cmdOS
     {
         protected override void BeforeRun()
         {
-            Console.WriteLine("cmdOS booted successfully. Type a line of text to get it echoed back.");
             Console.WriteLine("Hello User! thank for using cmdOS, this is a basic command OS!");
         }
 
         protected override void Run()
         {
+            
             var input = Console.ReadLine();
+            // var version == "0.1.2";
             // Console.Write("Type here: ");
 
             if (input == "help")
@@ -28,11 +29,21 @@ namespace cmdOS
                 Console.WriteLine("-----SYSTEM COMMAND-----------------");
                 Console.WriteLine("system info or sys info: Display info of the system cmdOS");
                 Console.WriteLine("credits: Give you a list of member who make this cmdOS!");
-
+                Console.WriteLine("-----UPDATE LOG---------------------");
+                Console.WriteLine("update log list: list of the log was change on cmdOS");
+            }
+            if (input == "update log list")
+            {
+                Console.Clear();
+                Console.WriteLine("UPDATE LOG: VERSION " + "0.1.2");
+                Console.WriteLine("Add New command");
+                Console.WriteLine("Remove The cmdOS Boot");
+                Console.WriteLine("");
+                Console.WriteLine("That all, this just a little update");
             }
             if (input == "about")
             {
-                Console.WriteLine("cmdOS: version 1.0");
+                Console.WriteLine("cmdOS: version " + "0.1.2");
                 Console.WriteLine("For the first using, please type 'help' for more command to use!");
             }
             if (input == "hi")
@@ -51,13 +62,13 @@ namespace cmdOS
             {
                 Console.Clear();
                 Console.WriteLine("System Info: cmdOS");
-                Console.WriteLine("Version: 0.1");
+                Console.WriteLine("Version: " + "0.1.2");
             }
             if (input == "sys info")
             {
                 Console.Clear();
                 Console.WriteLine("System Info: cmdOS");
-                Console.WriteLine("Version: 0.1");
+                Console.WriteLine("Version: " + "0.1.2");
             }
             if (input == "credits")
             {
