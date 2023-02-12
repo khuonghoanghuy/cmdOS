@@ -6,3 +6,6 @@ Yes, i create that opera system using Visual Studio 2013 and Cosmos! (With a lit
 The First release took me 2 day!
 
 Dont be dumb because it a terminal (i will create a gui)
+
+# How i run it?
+Using VMWare!
